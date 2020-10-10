@@ -1,2 +1,1 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230fb8"],{ef34:function(e,n,t){"use strict";t.r(n);var u=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" 我是公开指南的详情页啊 ")])},l=[],a={name:"InfoGuideDetails"},c=a,i=t("2877"),s=Object(i["a"])(c,u,l,!1,null,null,null);n["default"]=s.exports}}]);
-//# sourceMappingURL=chunk-2d230fb8.f20bc53d.js.map

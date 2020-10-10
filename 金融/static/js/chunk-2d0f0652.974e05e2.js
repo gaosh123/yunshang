@@ -1,2 +1,1 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0f0652"],{"9bd7":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v(" 我是县区财政详情啊 ")])},r=[],u={name:"AreaDetails",data:function(){return{}}},c=u,i=t("2877"),s=Object(i["a"])(c,a,r,!1,null,"0009947a",null);e["default"]=s.exports}}]);
-//# sourceMappingURL=chunk-2d0f0652.974e05e2.js.map

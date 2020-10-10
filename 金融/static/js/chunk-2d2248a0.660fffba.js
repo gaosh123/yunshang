@@ -1,2 +1,1 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2248a0"],{e120:function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v(" 我是财政专题的详情啊 ")])},c=[],u={name:"TopicDetails",data:function(){return{}}},i=u,r=t("2877"),o=Object(r["a"])(i,a,c,!1,null,"10c873a9",null);e["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-2d2248a0.660fffba.js.map
