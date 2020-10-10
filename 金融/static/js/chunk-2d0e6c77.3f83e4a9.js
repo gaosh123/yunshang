@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e6c77"],{"99cd":function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[t("router-view")],1)},r=[],u={name:"Policy",data:function(){return{}}},a=u,i=t("2877"),o=Object(i["a"])(a,c,r,!1,null,"48cd7425",null);n["default"]=o.exports}}]);
+//# sourceMappingURL=chunk-2d0e6c77.3f83e4a9.js.map

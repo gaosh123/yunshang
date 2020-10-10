@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0bd9ca"],{"2d79":function(n,e,t){"use strict";t.r(e);var c=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v(" 我是政策法规详情啊 ")])},a=[],u={name:"PolicyDetails",components:{},data:function(){return{}}},l=u,o=t("2877"),i=Object(o["a"])(l,c,a,!1,null,null,null);e["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d0bd9ca.2054d77f.js.map
