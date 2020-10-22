@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>滨州不动产消费券</title>
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+</head>
+<body>
+    <div id="app">
+        <div class="wenti">
+            <div class="title">
+              <img src="./../assets/wenti1.png" alt="" />
+              <p>常见问题分类</p>
+            </div>
+            <div class="fenlei">
+              <div class="ruler" @click="toRuler">
+                <img src="./../assets/wenti2.png" alt="" />
+                <div>
+                  <p class="name">规则问题</p>
+                  <p class="ques">领取时间等</p>
+                </div>
+              </div>
+              <div class="ruler"  @click="toRealname">
+                <img src="./../assets/wenti3.png" alt="" />
+                <div>
+                  <p class="name">实名问题</p>
+                  <p class="ques">实名认证</p>
+                </div>
+              </div>
+            </div>
+            <div class="fenlei">
+              <div class="ruler"  @click="toUse">
+                <img src="./../assets/wenti4.png" alt="" />
+                <div>
+                  <p class="name">用户使用</p>
+                  <p class="ques">用户如何使用</p>
+                </div>
+              </div>
+              <div class="ruler" @click="toShangJia">
+                <img src="./../assets/wenti5.png" alt="" />
+                <div>
+                  <p class="name">核销商家</p>
+                  <p class="ques">查看核销商家</p>
+                </div>
+              </div>
+            </div>
+            <div class="title">
+              <img src="./../assets/wenti6.png" alt="" />
+              <p>热门问题</p>
+            </div>
+            <div>
+              <van-collapse v-model="activeNames">
+                <van-collapse-item title="用户如何使用不动产契税消费券？" name="1">
+                  <div class="text">
+                    <p>
+                      （1）用户通过查看附近可用商家，前往商家店铺进行消费。
+                    </p>
+                    <p>
+                      （2）结账时向收银员出示消费券二维码或券号进行使用。（商家需用“滨州消费券”公众号核销）。
+                    </p>
+                  </div>
+                </van-collapse-item>
+                <van-collapse-item title="不动产证有多名户主，谁可领取消费券呢？" name="2"></van-collapse-item>
+                <van-collapse-item title="进入卡券怎样查看不动产消费券的使用情况？" name="3"></van-collapse-item>
+                <van-collapse-item title="打开“滨州消费券”公众号进行实名认证问题？" name="4"></van-collapse-item>
+                <van-collapse-item title="" name="5"></van-collapse-item>
+              </van-collapse>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+    <script src="./js/question.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/vue-router/2.7.0/vue-router.min.js"></script> -->
+</body>
+</html>

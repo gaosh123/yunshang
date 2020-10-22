@@ -1,0 +1,12 @@
+.v {
+  text-align: center;
+  padding: 0px 10px 0;
+}
+
+.v .video {
+  width: 100%;
+}
+
+p {
+  font-size: 14px;
+}

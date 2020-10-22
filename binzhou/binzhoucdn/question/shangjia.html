@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>滨州不动产消费券</title>
+    <!-- <link rel="stylesheet" href="./css/ruler.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+</head>
+<body>
+    <div id="app">
+        <van-collapse v-model="activeNames">
+            <van-collapse-item title="领取时间？" name="1">
+                  2020年6月13日——12月31日（按照县区具体实施政策为准）
+            </van-collapse-item>
+            <van-collapse-item title="领取人群？" name="2">
+                在活动时间内办理增量房（新办理的一手房房产证）不动产证的市民
+            </van-collapse-item>
+            <van-collapse-item title="领取方式？" name="3">
+                办理完增量房（一手房）不动产证3个工作日后市民可通过“我的聊城”APP领取政府补贴不动产契税消费券
+            </van-collapse-item>
+            <van-collapse-item title="一手商铺可领取不动产消费券？" name="4">
+                商铺也符合领取范围
+            </van-collapse-item>
+            <van-collapse-item title="不动产证有多名户主，谁可领取消费券呢？" name="5">
+                若存在多产权人的情况则自动取系统第一顺位自然人为消费券领取对象
+            </van-collapse-item>
+            <van-collapse-item title="各县区领取消费券条件？" name="6">
+                缴纳契税并领取不动产证（新办理的一手房房产证）就可以领取
+            </van-collapse-item>
+            <van-collapse-item title="其他县区具体发券时间？" name="7">
+                发券时间是由当地县区政府部门制定
+            </van-collapse-item>
+            <van-collapse-item title="各种条件都符合，就是不显示有卡券？" name="8">
+                具体情况可咨询“我的聊城”APP运营中心客服电话8518828。
+            </van-collapse-item>
+          </van-collapse>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/vue-router/2.7.0/vue-router.min.js"></script>
+    <script src="./js/shangjia.js"></script>
+</body>
+</html>

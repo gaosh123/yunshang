@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>滨州不动产消费券</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+    <link rel="stylesheet" href="./css/shangjia.css">
+</head>
+<body>
+    <div id="app">
+         <!--地图容器-->
+    <div class="map" id="container"></div>
+    <!--区域筛选-->
+    <div class="drop">
+      <van-dropdown-menu>
+        <van-dropdown-item
+          v-model="areaValue"
+          :options="areaList"
+        ></van-dropdown-item>
+        <van-dropdown-item
+          v-model="sortValue"
+          :options="sortList"
+        ></van-dropdown-item>
+      </van-dropdown-menu>
+    </div>
+    <!--区域筛选-->
+    <!-- <div>
+			<div class="areaTop" @click="selArea=!selArea">
+				<span>{{ticketArea | area}}</span>
+				<van-icon name="arrow-down" v-show="!selArea" />
+				<van-icon name="arrow-up" v-show="selArea" />
+			</div>
+			<ul class="areaAll" v-show="selArea">
+				<li v-for="(item,i) in areaList" :key='i' @click="ticketArea=item.code;selArea=false;reset()">{{item.name}}</li>
+			</ul>
+		</div> -->
+    <!--弹出层-->
+    <ul class="shopList" :class="{ actived2: showList }">
+      <li
+        class="topIco"
+        :class="{ actived: showList }"
+        @click="showList = !showList"
+      >
+        <div></div>
+      </li>
+      <li
+        class="listItem"
+        v-for="(item, index) in list"
+        v-show="index < isAll"
+        :key="index"
+      >
+        <div style="width:70%;">
+          <div class="shopName">{{ item.store_name }}</div>
+          <!-- <div class="shopTel">联系电话：{{item.store_name}}</div> -->
+          <div class="shopAdr">地址：{{ item.store_address }}</div>
+        </div>
+        <div
+          class="dis"
+          v-show="item.distance != 888888"
+          @click="goMap(item.gps, item.store_address)"
+        >
+          距我{{ (item.distance / 1000).toFixed(2) }}km
+          
+          <img src="./../assets/map1.png" alt="" />
+        </div>
+      </li>
+      <li class="nolist" v-show="showNo">暂无数据</li>
+      <li
+        class="seeMore"
+        @click="
+          isAll = list.length;
+          showMore = true;
+        "
+        v-show="!showMore"
+      >
+        查看更多>>
+      </li>
+    </ul>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js"></script>
+    <!-- <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=ec3bd89bc62edfe8928454dcbab04de4&callback=onLoad"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/vue-router/2.7.0/vue-router.min.js"></script>
+    <script src="./js/shangjia.js"></script>
+    <script>
+        var qs = Qs
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.wenti {
+    //   width: 100%;
+    padding: 0 15px;
+    .title {
+      // width: 100%;
+      margin: 15px 0;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 18px;
+        height: 21px;
+        margin-right: 5px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .fenlei {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .ruler {
+        // border: 1px solid;
+        width: 43%;
+        padding: 15px 0 15px 10px;
+        box-shadow: 0 0 3px #888888;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 13px;
+        }
+        p {
+          margin: 0;
+        }
+        .name {
+          font-size: 15px;
+          color: #101010;
+        }
+        .ques {
+          font-size: 13px;
+          color: #7d7b7c;
+          margin-top: 10px;
+        }
+      }
+    }
+    .text {
+      // background: #f8f8f8;
+      p {
+        margin: 0;
+      }
+    }
+  }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>滨州不动产消费券</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/realname.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+</head>
+<body>
+    <div id="app">
+        <div class="home">
+            <div class="info">
+              <van-image
+                fit="cover"
+                class="touxiang"
+                round
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+              ></van-image>
+              <div class="nicheng">
+                <span>昵称：</span>
+                <span>美好的一天</span>
+              </div>
+              <div class="xm">
+                <span>姓名：</span>
+                <span>王建</span>
+              </div>
+            </div>
+            <div class="top">
+              <div class="geren border">
+                <div class="left">
+                  <img class="logo" src="./../assets/home2.png" alt="" />
+                  <span class="one">实名认证</span>
+                </div>
+                <div class="left" @click="toReal">
+                  <span class="go">去认证</span>
+                  <img class="next" src="./../assets/next.png" alt="" />
+                </div>
+              </div>
+              <div class="geren">
+                <div class="left">
+                  <img class="logo" src="./../assets/home3.png" alt="" />
+                  <span class="one">可核销商家</span>
+                </div>
+                <div class="left" @click="toShop">
+                  <span class="go">去查看</span>
+                  <img class="next" src="./../assets/next.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="fenge"></div>
+        
+            <div class="card">
+              <div class="kaquan">
+                <div class="kaquan_left">
+                  <img src="./../assets/home4.png" alt="" />
+                  <span>我的卡券</span>
+                </div>
+                <div class="kaquan_right">
+                  <span>全部卡券</span>
+                  <img src="./../assets/next.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="use">
+                <div class="usecard">
+                  <div class="imgout">
+                    <van-icon :name="home5.url" :badge="home5.num"></van-icon>
+                    <!-- <img src="./../../assets/home5.png" alt="" /> -->
+                  </div>
+                  <p>未使用</p>
+                </div>
+                <div class="usecard">
+                  <div class="imgout">
+                    <!-- <img src="./../../assets/home6.png" alt="" /> -->
+                    <van-icon :name="home6.url" :badge="home6.num"></van-icon>
+                  </div>
+                  <p>已使用</p>
+                </div>
+                <div class="usecard">
+                  <div class="imgout">
+                    <!-- <img src="./../../assets/home7.png" alt="" /> -->
+                    <van-icon :name="home7.url" :badge="home7.num"></van-icon>
+                  </div>
+                  <p>已过期</p>
+                </div>
+              </div>
+            </div>
+            <div class="fenge"></div>
+            <div class="wenti" @click="toWenti">
+              <div class="wenti_left">
+                <img src="./../assets/home8.png" alt="" />
+                <span>常见问题</span>
+              </div>
+              <img class="wenti_right" src="./../assets/next.png" alt="" />
+            </div>
+            <div class="wenti" @click="toVideo">
+              <div class="wenti_left">
+                <img src="./../assets/home9.png" alt="" />
+                <span>视频教程</span>
+              </div>
+              <img class="wenti_right" src="./../assets/next.png" alt="" />
+            </div>
+            <div class="wenti" @click="toKefu">
+              <div class="wenti_left">
+                <img src="./../assets/home10.png" alt="" />
+                <span>在线客服</span>
+              </div>
+              <img class="wenti_right" src="./../assets/next.png" alt="" />
+            </div>
+        
+            <van-overlay :show="show" @click="show = false">
+              <div class="overlay">
+                <div class="realname">
+                  <div class="title">
+                    <van-image class="line line_line" :src="img.line"></van-image>
+                    <span>实名认证 让你快人一步</span>
+                    <van-image class="line" :src="img.line"></van-image>
+                  </div>
+                  <p class="point">三个步骤完成认证</p>
+                  <div class="image">
+                    <van-image class="img" :src="img.realname1"></van-image>
+                    <van-image class="img center" :src="img.realname2"></van-image>
+                    <van-image class="img" :src="img.realname3"></van-image>
+                    <div>
+                      <div class="number">
+                        <p class="num">01</p>
+                      </div>
+                      <div class="number center flex">
+                        <div class="blueline_left"></div>
+                        <p class="num">02</p>
+                        <div class="blueline_right"></div>
+                      </div>
+                      <div class="number">
+                        <p class="num">03</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="number">
+                        <p class="step">实名认证</p>
+                      </div>
+                      <div class="number center">
+                        <p class="step">信息填写</p>
+                      </div>
+                      <div class="number">
+                        <p class="step">完成认证</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="note">
+                      <div class="round"></div>
+                      <span class="suggest">需实名认证完成后，才可进行领券</span>
+                    </div>
+                    <div class="note">
+                      <div class="round"></div>
+                      <span class="suggest">实名认证需填写正确的信息</span>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <van-button class="confirm" @click="confirm">立即认证</van-button>
+                    <div class="think" @click="cancel"><span>再想想</span></div>
+                  </div>
+                </div>
+              </div>
+            </van-overlay>
+          </div>
+  
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/vue-router/2.7.0/vue-router.min.js"></script>
+    <script src="./js/vue.js"></script>
+</body>
+</html>
