@@ -15,7 +15,7 @@
     right: 0;
     z-index: 11;
     width: 10rem;
-    height: 25rem;
+    height: 50%;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0rem 0.28rem 0.5733rem 0rem rgba(6, 31, 59, 0.3);
     border-radius: 0.2667rem 0.2667rem 0rem 0rem;
@@ -46,7 +46,7 @@
     width: 100%;
   }
   .actived {
-    bottom: 25rem !important;
+    bottom: 50% !important;
   //   height: 30px;
     // padding-top: 0.9067rem; 
   }
