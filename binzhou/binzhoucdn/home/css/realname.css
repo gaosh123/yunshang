@@ -82,17 +82,17 @@
 
 .realname .image .flex .blueline_left {
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: -53px;
   display: inline-block;
-  height: 0.5px;
+  height: 1px;
   width: 70px;
   background: #2174d8;
 }
 
 .realname .image .flex .blueline_right {
   position: absolute;
-  top: 10px;
+  top: 11px;
   display: inline-block;
   height: 1px;
   width: 70px;
