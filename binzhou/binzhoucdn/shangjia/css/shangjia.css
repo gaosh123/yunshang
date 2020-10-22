@@ -12,12 +12,12 @@
 
 .shopList {
   position: fixed;
-  bottom: -50%;
+  bottom: -25rem;
   left: 0;
   right: 0;
   z-index: 11;
   width: 10rem;
-  height: 50%;
+  height: 25rem;
   background: white;
   box-shadow: 0rem 0.28rem 0.5733rem 0rem rgba(6, 31, 59, 0.3);
   border-radius: 0.2667rem 0.2667rem 0rem 0rem;
@@ -55,12 +55,10 @@
 }
 
 .actived {
-  bottom: 50% !important;
-  padding-top: 0.9067rem;
+  bottom: 25rem !important;
 }
 
 .actived2 {
-  padding-top: 1.9067rem;
   bottom: 0rem !important;
 }
 
@@ -109,6 +107,8 @@
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: #8e8e8e;
+  display: flex;
+  align-items: center;
 }
 
 .dis img {

@@ -48,10 +48,10 @@
   .actived {
     bottom: 25rem !important;
   //   height: 30px;
-    padding-top: 0.9067rem; 
+    // padding-top: 0.9067rem; 
   }
   .actived2 {
-  padding-top: 1.9067rem; 
+  // padding-top: 1.9067rem; 
     bottom: 0rem !important;
   }
   .topIco div {
@@ -97,6 +97,8 @@
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: rgba(142, 142, 142, 1);
+    display: flex;
+    align-items: center;
   //   line-height: 0.5333rem;
     img{
         width: 16px;
