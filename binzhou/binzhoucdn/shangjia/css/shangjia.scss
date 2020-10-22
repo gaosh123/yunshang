@@ -10,7 +10,7 @@
   }
   .shopList {
     position: fixed;
-    bottom: -25rem;
+    bottom: -50%;
     left: 0;
     right: 0;
     z-index: 11;
@@ -51,8 +51,8 @@
     // padding-top: 0.9067rem; 
   }
   .actived2 {
-  // padding-top: 1.9067rem; 
-    bottom: 0rem !important;
+    padding-top: 1.9067rem; 
+    bottom: 0 !important;
   }
   .topIco div {
     width: 1.12rem;
