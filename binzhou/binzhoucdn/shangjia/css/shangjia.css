@@ -12,12 +12,12 @@
 
 .shopList {
   position: fixed;
-  bottom: -25rem;
+  bottom: -50%;
   left: 0;
   right: 0;
   z-index: 11;
   width: 10rem;
-  height: 25rem;
+  height: 50%;
   background: white;
   box-shadow: 0rem 0.28rem 0.5733rem 0rem rgba(6, 31, 59, 0.3);
   border-radius: 0.2667rem 0.2667rem 0rem 0rem;
@@ -55,7 +55,7 @@
 }
 
 .actived {
-  bottom: 25rem !important;
+  bottom: 50% !important;
   padding-top: 0.9067rem;
 }
 
