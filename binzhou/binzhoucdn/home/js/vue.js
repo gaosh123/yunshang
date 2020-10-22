@@ -4,22 +4,22 @@ const app = new Vue({
       return {
         show: false,
         home5: {
-          url: "./../../assets/home5.png",
+          url: "./../assets/home5.png",
           num: 0
         },
         home6: {
-          url: "./../../assets/home6.png",
+          url: "./../assets/home6.png",
           num: 23
         },
         home7: {
-          url: "./../../assets/home7.png",
+          url: "./../assets/home7.png",
           num: 56
         },
         img: {
-          line: "./../../assets/line.png",
-          realname1: "./../../assets/realname1.png",
-          realname2: "./../../assets/realname2.png",
-          realname3: "./../../assets/realname3.png"
+          line: "./../assets/line.png",
+          realname1: "./../assets/realname1.png",
+          realname2: "./../assets/realname2.png",
+          realname3: "./../assets/realname3.png"
         }
       }
   },
